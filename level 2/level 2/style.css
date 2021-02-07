@@ -1,0 +1,303 @@
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        body {
+            background-color: #dedede;
+            font-size: 13px;
+        }
+        /* 清除浮动开始*/
+        
+        .clearfix::after {
+            content: "";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+        /* 清除浮动结束 */
+        /* 导航栏开始*/
+        
+        nav {
+            width: 100%x;
+            background-color: #313433;
+        }
+        
+        nav img {
+            float: left;
+            margin-left: 30px;
+        }
+        
+        nav ul li {
+            float: right;
+            margin: 0 10px;
+            list-style: none;
+        }
+        
+        .top {
+            color: white;
+            font-size: 8px;
+            line-height: 39px;
+        }
+        /* 导航栏结束 */
+        /* 侧边栏开始 */
+        
+        input {
+            outline: none;
+        }
+        
+        aside {
+            position: absolute;
+            right: 0;
+            margin: 37px 25px 0 25px;
+            border: 1px solid #000;
+            box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, .3);
+            width: 400px;
+            height: 470px;
+            background-color: #fff;
+            font-weight: 550;
+        }
+        
+        aside .title {
+            margin-left: 25px;
+        }
+        
+        aside .introduction1 {
+            margin: 0 20px 0 40px;
+        }
+        
+        aside .trans1 {
+            margin-top: 20px;
+        }
+        
+        aside .tips {
+            margin-left: 155px;
+            margin-top: 10px;
+            color: #aaa8a4
+        }
+        
+        aside .introduction2 {
+            margin: 0 20px 0 65px;
+        }
+        
+        aside .trans2 {
+            margin-top: 20px;
+        }
+        
+        aside .trans3 {
+            margin-top: 10px;
+        }
+        
+        aside .sex {
+            margin-left: 105px;
+        }
+        
+        aside .man {
+            margin: 0 15px 0 15px;
+        }
+        
+        aside .city- {
+            margin: 0 20px 0 105px;
+        }
+        
+        aside .city {
+            margin-top: 10px;
+        }
+        
+        aside .hobby- {
+            margin: 0 20px 0 105px;
+        }
+        
+        aside .hobby {
+            margin-top: 10px;
+        }
+        
+        aside textarea {
+            resize: none;
+            width: 150px;
+            height: 80px;
+        }
+        
+        aside .self .describe {
+            margin: 0 20px 0 79px;
+            vertical-align: top;
+        }
+        
+        aside .self {
+            margin-top: 10px;
+        }
+        
+        aside .submit input {
+            width: 150px;
+            height: 40px;
+            background-color: #3355d1;
+            border-radius: 10px;
+            color: #fff;
+        }
+        
+        aside .submit {
+            margin: 25px 0 0 125px;
+        }
+        /* 侧边栏结束 */
+        /* 中间文章部分开始 */
+        /* 第一篇文章开始 */
+        
+        article {
+            border: 1px solid #000;
+            width: 900px;
+            margin: 37px 0 0 25px;
+            box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, .3);
+            background-color: #fff;
+        }
+        
+        article h2 {
+            font-size: 14px;
+            color: #696469;
+        }
+        
+        article h3 {
+            float: left;
+            font-size: 12px;
+            font-weight: 400;
+            color: #696469;
+        }
+        
+        h1,
+        h2 {
+            margin: 0 15px;
+            margin-top: 10px;
+        }
+        
+        h3 {
+            margin: 10px 0 10px 15px;
+        }
+        
+        p {
+            margin: 0 15px;
+            text-indent: 2em;
+            line-height: 20px;
+            font-weight: 550;
+        }
+        
+        article .last {
+            margin-bottom: 50px;
+        }
+        
+        article .big {
+            width: 400px;
+        }
+        
+        article p a {
+            text-decoration: underline;
+        }
+        /* 第一篇文章结束 */
+        /* 第二篇文章开始 ，部分样式调用第一篇文章*/
+        
+        article.order {
+            list-style: none;
+        }
+        
+        article .order li {
+            line-height: 20px;
+            font-size: 15px;
+            font-weight: 550;
+            margin: 0 45px;
+        }
+        
+        article .order li:nth-child(3) {
+            margin-bottom: 50px;
+        }
+        /* 第二篇文章结束 */
+        /* 图片部分开始 */
+        
+        .pictures h1 {
+            margin: 20px 0 20px 30px;
+            font-size: 25px;
+        }
+        
+        .pic-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: space-around;
+            margin: 20px 20px;
+        }
+        
+        .pictures .pic-box .pic-box-small {
+            width: 150px;
+            height: 150px;
+            border: 1px solid grey;
+            margin-bottom: 20px;
+        }
+        
+        .pictures .pic-box .pic-box-small .comment {
+            width: 100%;
+            height: 40px;
+            font-size: 13px;
+            text-align: center;
+            line-height: 40px;
+        }
+        
+        .pictures .small {
+            margin: 15px auto;
+        }
+        
+        .pictures .small img {
+            width: 100%;
+        }
+        /* 图片部分结束 */
+        /* 最后一篇文章开始 */
+        
+        .last ol li {
+            font-size: 14px;
+            font-weight: 550;
+            margin: 7px 0 0 50px;
+        }
+        
+        .last table {
+            margin: 20px auto;
+            margin-bottom: 40px;
+            width: 95%;
+            font-weight: 550;
+        }
+        
+        .last table th,
+        .last table td {
+            padding-left: 5px;
+            width: 50px;
+            height: 20px;
+            line-height: 20px;
+            font-weight: 550;
+        }
+        
+        .last table th {
+            background-color: #000;
+            color: #fff;
+        }
+        
+        .last table tr:last-child {
+            background-color: #cccccc;
+        }
+        /* 最后一篇文章结束 */
+        /* 中间文章部分结束 */
+        /* 尾页栏开始 */
+        
+        footer {
+            width: 100%;
+            height: 70px;
+            background-color: #000000;
+            margin-top: 30px;
+        }
+        
+        footer div {
+            text-align: center;
+            font-size: 14px;
+            color: #ffffff;
+            line-height: 50px;
+        }
+        /* 尾页栏结束 */
